@@ -1,0 +1,16 @@
+/* Переменные цветов */
+$basic-slate-grey: #334654;
+$basic-grey: #293449;
+
+.html {
+    height: 100%;
+}
+
+.body {
+    min-height: 100%;
+    background-color: $basic-slate-grey;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
