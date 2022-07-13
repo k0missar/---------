@@ -1,16 +1,152 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: {{projectTitle}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="main-headre">ШАПКА</header>
-      <main class="main-contenr">КОНТЕНТ</main>
-      <footer class="main-footer">ФУТЕР</footer>
-    </div>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="bar-navigation">
+        <h1>Интернет-магазин Техномарт</h1>
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="108px" height="18px" alt="Логотип магазина">
+        </a>
+        <ul class="bar-navigation-menu">
+          <li>Поиск</li>
+          <li><a href="blank.html">Закладки: 0</a></li>
+          <li><a href="blank.html">Корзина: 0</a></li>
+          <li><a href="blank.html">Оформить заказ</a></li>
+        </ul>
+      </nav>
+      <section class="information">
+        <h2>Информация</h2>
+        <p>Интернет магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+        <a href="tel:+78005558628" class="contacts-phone">+7 800 555-86-28</a>
+        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        <button type="button" class="user-btn">Войти</button>
+        <button type="button" class="user-btn">Регистрация</button>
+      </section>
+      <nav class="main-navigation">
+        <ul class="main-navigation-menu">
+          <li><a>Главная</a></li>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="features">
+        <h2>Слайдер и преимущества</h2>
+      </section>
+      <section>
+        <h2>Популярные товары</h2>
+        <a href="blank.html" class="main-btn">Все популярные товары</a>
+        <ul>
+          <li><img scr="img/snippet-9000.png" width="184px" height="164px" alt="Перфоратор BOSCH BFG 9000"><a href="blank.html">Перфоратор BOSCH BFG 9000</a><p>32500 р.</p><p>25500 р.</p></li>
+          <li><img scr="img/snippet-3000.png" width="184px" height="164px" alt="Перфоратор BOSCH BFG 3000"><a href="blank.html">Перфоратор BOSCH BFG 3000</a><p>22500 р.</p><p>15500 р.</p></li>
+          <li><img scr="img/snippet-6000.png" width="184px" height="164px" alt="Перфоратор BOSCH BFG 6000"><a href="blank.html">Перфоратор BOSCH BFG 6000</a><p>30500 р.</p><p>25500 р.</p></li>
+          <li><img scr="img/snippet-2000.png" width="184px" height="164px" alt="Перфоратор BOSCH BFG 2000"><a href="blank.html">Перфоратор BOSCH BFG 2000</a><p>22500 р.</p><p>12500 р.</p></li>
+        </ul>
+      </section>
+      <section class="popular-manufactures">
+        <h2>Популярные производители</h2>
+        <a href="blank.html" class="main-btn">Все производители</a>
+        <p>ЛОГОТИПЫ ВСЕХ ПРОИЗВОДИТЕЛЕЙ</p>
+      </section>
+      <section class="services">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p>Мы стараемся изо всех сил, чтобы сделать выши покупки прятными.</p>
+      </section>
+      <section class="delivery">
+        <h2>Компания "Техномарт"</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+        <p>Техномарт работает со многими транспортными компаниями</p>
+        <ul class="delivery-list">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="blank.html">Подробнее о компании</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами,<br> заехва в наш офис:</p>
+        <img src="img/map.png" width="300px" height="158px" alt="Карта пути до магазина">
+        <a href="blank.html" class="main-btn">Заблудились? Напишите нам!</a>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-one">
+        <h2>Подвал</h2>
+        <a class="main-footer-logo">
+          <img src="img/logo.svg" width="138px" height="23px" alt="Логотип интернет-магазина">
+        </a>
+        <ul class="one-menu-list">
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </section>
+      <section class="footer-two">
+        <h2>Контактная информация</h2>
+        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        <p>+7 800 555-86-28</p>
+        <ul class="two-menu-list">
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </section>
+      <section class="footer-three">
+        <section class="copy">
+          <h2>Социальные иконки</h2>
+          <p>&#169; 2010-2021 Компания "Техномарт"</p>
+          <p>Все права защищены</p>
+        </section>
+        <section class="social">
+          <ul class="social-icon-list">
+            <li>
+              <a href="https://vk.com" class="social-button">
+                <img src="img/icon-vk.svg" width="26px" height="15px" alt="Кнопка Вконтакте">
+              </a>
+            </li>
+            <li>
+              <a href="https://fb.com" class="social-button">
+                <img src="img/icon-fb.svg" width="12px" height="22px" alt="Кнопка Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="https://instagramm.com" class="social-button">
+                <img src="img/icon-insta.svg" width="21px" height="21px" alt="Кнопка Instagramm">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="bycreate">  
+          <p>Обратная связь:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p>Разработано -</p>
+          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </section>
+      </section>
+    </footer>
   </body>
 </html>
