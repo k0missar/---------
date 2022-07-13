@@ -1,0 +1,43 @@
+/* Variables color */
+:root {
+    --basic-blue-dark: #293449;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --basic-blue-light: #32425C;
+    --basic-special-yellow: #FFBF47;
+    --basic-special-blue: #3BBCE3;
+    --basic-special-violette: #DC91D8;
+    --basic-special-green: #8ED78F;
+    --basic-gray: #A9A9A9;
+    --basic-light-gray: #F1F5F7;
+    --basic-yellow: #FFD180;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    font-family: 'Cuprum', 'Helvetica', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+
+.main-header {
+    background-color: var(--basic-light-gray);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.bar-navigation {
+    background-color: var(--basic-blue-dark);
+}
