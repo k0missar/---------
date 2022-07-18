@@ -15,26 +15,33 @@
   </head>
   <body class="page-body">
     <header class="main-header">
+      
       <nav class="bar-navigation">
         <h1>Интернет-магазин Техномарт</h1>
         <a class="main-header-logo">
           <img src="img/logo.svg" width="108px" height="18px" alt="Логотип магазина">
         </a>
+        <label class="search">Поиск: <input type="text"></label>
         <ul class="bar-navigation-menu">
-          <li>Поиск</li>
-          <li><a href="blank.html">Закладки: 0</a></li>
-          <li><a href="blank.html">Корзина: 0</a></li>
-          <li><a href="blank.html">Оформить заказ</a></li>
+          <li class="navigation-menu-item"><a href="blank.html">Закладки: 0</a></li>
+          <li class="navigation-menu-item"><a href="blank.html">Корзина: 0</a></li>
+          <li class="navigation-menu-item"><a href="blank.html">Оформить заказ</a></li>
         </ul>
       </nav>
+
       <section class="information">
         <h2>Информация</h2>
         <p>Интернет магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-        <a href="tel:+78005558628" class="contacts-phone">+7 800 555-86-28</a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-        <button type="button" class="user-btn">Войти</button>
-        <button type="button" class="user-btn">Регистрация</button>
+        <div class="contacts-phone">  
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        </div>
+        <div class="login-panel">
+          <button type="button" class="user-btn">Войти</button>
+          <button type="button" class="user-btn">Регистрация</button>
+        </div>
       </section>
+
       <nav class="main-navigation">
         <ul class="main-navigation-menu">
           <li><a>Главная</a></li>
@@ -46,10 +53,37 @@
           <li><a href="blank.html">Контакты</a></li>
         </ul>
       </nav>
+      
+      <div class="bar-color"></div>
+
     </header>
     <main class="container">
       <section class="features">
         <h2>Слайдер и преимущества</h2>
+        <div>
+          <p>Материалы</p>
+          <button type="button" class="features-btn">На любой вкус</button>
+        </div>
+        <div>
+          <p>Инструмент</p>
+          <button type="button" class="features-btn">На все случи</button>
+        </div>
+        <div>
+          <p>Техника</p>
+          <button type="button" class="features-btn">Для стройки</button>
+        </div>
+        <div class="features-slider">
+          Материалы
+        </div>
+        <div>
+          <p>Скидки 50%</p>
+          <button type="button" class="features-btn">На 350 товаров</button>
+        </div>
+        <div>
+          <p>Доставка</p>
+          <button type="button" class="features-btn">Бесплатно</button>
+        </div>
+
       </section>
       <section>
         <h2>Популярные товары</h2>
@@ -66,12 +100,12 @@
         <a href="blank.html" class="main-btn">Все производители</a>
         <p>ЛОГОТИПЫ ВСЕХ ПРОИЗВОДИТЕЛЕЙ</p>
       </section>
-      <section class="services">
+      <section class="services text-conternt">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p>Мы стараемся изо всех сил, чтобы сделать выши покупки прятными.</p>
       </section>
-      <section class="delivery">
+      <section class="delivery text-conternt">
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
@@ -81,9 +115,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="blank.html">Подробнее о компании</a>
+        <a href="blank.html" class="main-btn">Подробнее о компании</a>
       </section>
-      <section class="contacts">
+      <section class="contacts text-conternt">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br> заехва в наш офис:</p>
         <img src="img/map.png" width="300px" height="158px" alt="Карта пути до магазина">

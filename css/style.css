@@ -1,9 +1,10 @@
-/* Variables color */
+/* ПЕРЕМЕННЫЕ ЦВЕТОВ */
 :root {
     --basic-blue-dark: #293449;
     --basic-red: #EE3643;
     --basic-green: #63A63E;
     --basic-white: #FFFFFF;
+    --basic-RGB-white: 255, 255, 255;
     --basic-black: #000000;
     --basic-blue-light: #32425C;
     --basic-special-yellow: #FFBF47;
@@ -15,29 +16,293 @@
     --basic-yellow: #FFD180;
 }
 
+/* ОБЩЕЕ */
+
 * {
     box-sizing: border-box;
 }
 
-body {
+.page {
+    height: 100%;
+}
+
+h1 {
     margin: 0;
+    display: none;
+}
+
+.page-body {
+    margin: 0 auto;
     padding: 0;
-    width: 940px;
+    
     font-family: 'Cuprum', 'Helvetica', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: var(--basic-white);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue-light);
+}
+
+.text-conternt {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.main-btn {
+    background-color: var(--basic-red);
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+/* ШАПКА */
 .main-header {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 940px;
+    height: 320px;
+    justify-content: center;
     background-color: var(--basic-light-gray);
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
+    margin-bottom: 59px;
 }
 
 .bar-navigation {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
     background-color: var(--basic-blue-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-logo {
+    position: absolute;
+    width: 200px;
+    height: 47px;
+    padding-top: 12px;
+    background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-align: center;
+}
+
+.search {
+    margin-right: auto;
+    margin-left: 217px;
+}
+
+.search input {
+    width: 220px;
+    border: 0;
+    background-color: var(--basic-blue-dark);
+    color: var(--basic-white);
+}
+
+.bar-navigation-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+
+.information h2 {
+    display: none;
+}
+
+.information>p {
+    margin-top: 42.5px;
+    margin-left: 30px;
+}
+
+.contacts-phone {
+    margin-top: 46px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.contacts-phone p {
+    margin-top: 3px;
+}
+
+.contacts-phone a {
+    display: block;
+    border: 3px solid var(--basic-white);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--basic-red);
+}
+
+.login-panel {
+    margin-top: 46px;
+}
+
+.user-btn {
+    padding: 12px 24px;
+    background-color: var(--basic-white);
+    border: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.user-btn:last-child {
+    margin-left: 10px;
+}
+
+.main-navigation-menu {
+    margin-bottom: 60px;
+    padding: 16px 53px 20px 53px;
+    background-color: var(--basic-blue-dark);
+    box-shadow: inset 0px -5px 0px var(--basic-blue-light);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-menu-item {
+    padding: 9px 0;
+    width: 150px;
+    height: 42px;
+    text-align: center;
+}
+
+.navigation-menu-item a {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.navigation-menu-item:last-child {
+    background-color: var(--basic-green);
+}
+
+/* ПРЕИМУЩЕСТВА */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 123px);
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Cuprum', 'Helvetica', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--basic-white);
+}
+
+.features h2 {
+    display: none;
+}
+
+.features-slider {
+    grid-column: 1 / 3;
+    grid-row: 2 / -1;
+}
+
+.features div {
+    padding: 20px 0 21px 23px;
+}
+
+.features p {
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.features-btn {
+    width: 135px;
+    height: 38px;
+    border: 0px;
+    background-color: rgba(var(--basic-RGB-white), 0.3);
+    text-align: center;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.features div:nth-child(2) {
+    background-color: var(--basic-special-yellow);
+}
+
+.features div:nth-child(3) {
+    background-color: var(--basic-special-blue);
+}
+
+.features div:nth-child(4) {
+    background-color: var(--basic-special-violette);
+}
+
+.features div:nth-child(6) {
+    background-color: var(--basic-special-green);
+}
+
+.features div:nth-child(7) {
+    background-color: var(--basic-special-yellow);
+}
+
+
+
+.main-navigation-menu a, .main-navigation-menu a:link, .main-navigation-menu a:hover, .main-navigation-menu a:visited {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.services {
+    background-color: var(--basic-light-gray);
+}
+
+.contacts h2, .delivery h2, .services h2 {
+    color: var(--basic-black);
+}
+
+.bar-color {
+    position: absolute;
+    background-color: var(--basic-blue-dark);
+    width: 100%;
+    height: 42px;
 }
