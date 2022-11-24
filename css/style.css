@@ -113,7 +113,7 @@ h2 {
 
 .main-header-logo {
     position: absolute;
-    width: 200px;
+    width: 220px;
     height: 47px;
     padding-top: 12px;
     background-color: var(--basic-red);
@@ -122,12 +122,23 @@ h2 {
 }
 
 .search {
-    margin-right: auto;
-    margin-left: 217px;
+    position: relative;
+    margin-right: 45px;
+    margin-left: 240px;
+    padding-left: 20px;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    width: 17px;
+    height: 17px;
+    background-image: url(/img/icon-search.svg);
 }
 
 .search input {
-    width: 220px;
+    width: 100px;
     border: 0;
     background-color: var(--basic-blue-dark);
     color: var(--basic-white);
@@ -164,20 +175,28 @@ h2 {
 
 .contacts-phone {
     margin-top: 46px;
+    width: 270px;
+    height: 45px;
     font-family: inherit;
     font-weight: inherit;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-black);
+    text-align: center;
 }
 
 .contacts-phone p {
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .contacts-phone a {
+    position: relative;
     display: block;
+    width: 270px;
+    height: 45px;
+    padding-left: 30px;
+    padding-top: 5px;
     border: 3px solid var(--basic-white);
     font-family: inherit;
     font-weight: 700;
@@ -185,6 +204,16 @@ h2 {
     line-height: 30px;
     text-decoration: none;
     color: var(--basic-red);
+}
+
+.contacts-phone a::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    left: 37px;
+    top: 8px;
+    background-image: url(/img/Shape.svg);
 }
 
 .login-panel {
@@ -216,10 +245,35 @@ h2 {
 }
 
 .navigation-menu-item {
-    padding: 9px 0;
+    position: relative;
+    padding: 9px 0 9px 20px;
     width: 150px;
     height: 42px;
     text-align: center;
+}
+
+.navigation-menu-item:last-child {
+    padding: 9px 0;
+}
+
+.bookmark::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    top: 14px;
+    left: 19px;
+    background-image: url(/img/icon-bookmark.svg);
+}
+
+.cart::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 14px;
+    left: 25px;
+    background-image: url(/img/icon-cart.svg);
 }
 
 .navigation-menu-item a {
@@ -258,6 +312,27 @@ h2 {
 
 .features-card {
     padding: 20px 0 21px 23px;
+}
+
+.materials {
+    position: relative;
+    overflow: hidden;
+    background-image: url(/img/icon-1.svg);
+    background-position: 211px;
+    background-repeat: no-repeat;
+}
+
+.materials::after {
+    content: "NEW";
+    position: absolute;
+    top: 5px;
+    left: 225px;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: #EE3643;
+    transform: rotate(45deg);
 }
 
 .features-slider {
